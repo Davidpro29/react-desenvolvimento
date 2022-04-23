@@ -1,17 +1,18 @@
-import React from 'react';
-
+import {useState} from 'react'
 import "./App.css"
-import Evento from "./components/Evento"
-import Form from "./components/Form"
+
+import SeuNome from './components/SeuNome'
+import Saudacao from './components/Saudacao'
+
 
 function App(){
+  const [nome, setNome] = useState()
 
     return (      
       <div className="container">
-        <h1>Testando eventos</h1>
-        <Evento numero="1" />
-        <Evento numero="2" />
-        <Form />        
+        <h1>State Lift</h1>
+      <SeuNome setNome={setNome} />
+      <Saudacao nome={nome} />
       </div>
     )
   

@@ -1,13 +1,14 @@
-function Evento ({numero}){
+import Button from './evento/Button'
 
+function Evento (){
     function meuEvento (){
-        console.log(`o ${numero} foi ativado`)
+        console.log(`botão da props 1 ativado`)
     }
 
     return(
         <div>
             <p>Clique para disparar o Evento no React</p>
-            <button onClick={meuEvento}>Ativar</button>
+            <Button event={meuEvento} text="PrimeiroEvento"/>
         </div>
     )
 }
