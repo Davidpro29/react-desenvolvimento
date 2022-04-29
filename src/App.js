@@ -1,20 +1,24 @@
-import {useState} from 'react'
-import "./App.css"
+import Led from './components/Led'
+import './App.css';
 
-import SeuNome from './components/SeuNome'
-import Saudacao from './components/Saudacao'
+function App() {
 
+  const cancelar = (obj) =>{
+    return obj.preventDefault()
+  }
 
-function App(){
-  const [nome, setNome] = useState()
-
-    return (      
-      <div className="container">
-        <h1>State Lift</h1>
-      <SeuNome setNome={setNome} />
-      <Saudacao nome={nome} />
-      </div>
-    )
-  
+  return (
+    <>
+      <Led />
+      <a
+        href='https//:youtube.com'
+        target='_blank'
+        onClick={(e) =>cancelar(e)}
+      >
+        Youtube 
+      </a>
+    </>    
+  );
 }
+
 export default App;

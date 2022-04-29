@@ -1,14 +1,27 @@
-.container {
-    max-width: 500px;
-    margin:30px auto;
-    overflow: auto;
-    min-height: 300px;
-    border: 2px solid rgb(16, 17, 16);
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(203, 197, 197);
+  text-align: center;
 }
 
-p {
-    background-color: rgb(158, 154, 154);
+.paragrafo {
+  color: rgb(51, 12, 124);
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.caixa a:hover {
+  color: rgb(65, 19, 129);
+  background: #fff;
 }
