@@ -1,23 +1,12 @@
-import Led from './components/Led'
 import './App.css';
+import React from 'react';
+import ElevacaoState from './components/ElevacaoState'
 
 function App() {
-
-  const cancelar = (obj) =>{
-    return obj.preventDefault()
-  }
-
   return (
-    <>
-      <Led />
-      <a
-        href='https//:youtube.com'
-        target='_blank'
-        onClick={(e) =>cancelar(e)}
-      >
-        Youtube 
-      </a>
-    </>    
+  <>
+    <ElevacaoState/>
+  </>
   );
 }
 
