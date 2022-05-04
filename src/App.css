@@ -28,3 +28,9 @@
 h1, h2, h3 {
   color: rgb(85, 84, 84);
 }
+
+button {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
