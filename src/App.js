@@ -1,17 +1,16 @@
-import './App.css';
 import React from 'react';
-import ApiReact from './components/ApiReact'
+import ApiReactFetch from './components/ApiReactFetch'
+import './App.css'
 
+function App(){
 
-function App() {
-
+    return(
+      <div>
+        <h1>fetch com React</h1>
+        <ApiReactFetch />
+      </div>
       
-  return (
-  <>
-    <h2>Consumindo dados da Api com React.js</h2>
-    <ApiReact />
-  </>
-  )
+    )    
 }
 
 export default App;
